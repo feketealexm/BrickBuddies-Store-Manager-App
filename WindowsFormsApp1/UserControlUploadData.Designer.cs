@@ -39,7 +39,8 @@
             // 
             // pictureBoxSuccess
             // 
-            this.pictureBoxSuccess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxSuccess.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBoxSuccess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBoxSuccess.Image = global::WindowsFormsApp1.Properties.Resources.uploadsuccess;
             this.pictureBoxSuccess.Location = new System.Drawing.Point(136, 22);
             this.pictureBoxSuccess.Name = "pictureBoxSuccess";
@@ -50,6 +51,8 @@
             // 
             // pictureBoxDragAndDrop
             // 
+            this.pictureBoxDragAndDrop.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pictureBoxDragAndDrop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBoxDragAndDrop.Image = global::WindowsFormsApp1.Properties.Resources.dragndrop;
             this.pictureBoxDragAndDrop.Location = new System.Drawing.Point(136, 22);
             this.pictureBoxDragAndDrop.Name = "pictureBoxDragAndDrop";
@@ -60,6 +63,8 @@
             // 
             // buttonEnd
             // 
+            this.buttonEnd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonEnd.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonEnd.Location = new System.Drawing.Point(499, 480);
             this.buttonEnd.Name = "buttonEnd";
@@ -71,6 +76,7 @@
             // 
             // buttonUpload
             // 
+            this.buttonUpload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonUpload.Location = new System.Drawing.Point(614, 422);
             this.buttonUpload.Name = "buttonUpload";
             this.buttonUpload.Size = new System.Drawing.Size(111, 32);
@@ -81,6 +87,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(450, 430);
             this.label1.Name = "label1";

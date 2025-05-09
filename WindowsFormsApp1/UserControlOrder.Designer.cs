@@ -38,6 +38,7 @@
             this.buttonCSVsave = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.buttonDisableFilter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrder)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,16 +108,18 @@
             // 
             // labelCost
             // 
-            this.labelCost.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelCost.Location = new System.Drawing.Point(894, 15);
+            this.labelCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCost.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelCost.Location = new System.Drawing.Point(922, 15);
             this.labelCost.Name = "labelCost";
-            this.labelCost.Size = new System.Drawing.Size(339, 60);
+            this.labelCost.Size = new System.Drawing.Size(311, 60);
             this.labelCost.TabIndex = 9;
             this.labelCost.Text = "Rendelés ára: 0 HUF";
             this.labelCost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonFormattedCSVsave
             // 
+            this.buttonFormattedCSVsave.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.buttonFormattedCSVsave.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonFormattedCSVsave.Location = new System.Drawing.Point(939, 220);
             this.buttonFormattedCSVsave.Name = "buttonFormattedCSVsave";
@@ -128,6 +131,7 @@
             // 
             // buttonCSVsave
             // 
+            this.buttonCSVsave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonCSVsave.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonCSVsave.Location = new System.Drawing.Point(943, 447);
             this.buttonCSVsave.Name = "buttonCSVsave";
@@ -139,6 +143,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(939, 84);
             this.label3.Name = "label3";
@@ -149,6 +154,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(939, 311);
             this.label4.Name = "label4";
@@ -158,11 +164,23 @@
     "z";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // buttonDisableFilter
+            // 
+            this.buttonDisableFilter.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonDisableFilter.Location = new System.Drawing.Point(6, 389);
+            this.buttonDisableFilter.Name = "buttonDisableFilter";
+            this.buttonDisableFilter.Size = new System.Drawing.Size(201, 39);
+            this.buttonDisableFilter.TabIndex = 14;
+            this.buttonDisableFilter.Text = "Összes Megjelenítése";
+            this.buttonDisableFilter.UseVisualStyleBackColor = true;
+            this.buttonDisableFilter.Click += new System.EventHandler(this.buttonDisableFilter_Click);
+            // 
             // UserControlOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.buttonDisableFilter);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.buttonCSVsave);
@@ -193,5 +211,6 @@
         private System.Windows.Forms.Button buttonCSVsave;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button buttonDisableFilter;
     }
 }

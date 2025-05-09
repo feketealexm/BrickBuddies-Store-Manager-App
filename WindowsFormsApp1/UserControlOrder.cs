@@ -226,5 +226,12 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Hiba történt: " + ex.Message);
             }
         }
+
+        private void buttonDisableFilter_Click(object sender, EventArgs e)
+        {
+            dataGridViewOrder.DataSource = null;
+            dataGridViewOrder.DataSource = allOrders;
+            listBoxVendors.ClearSelected();
+        }
     }
 }

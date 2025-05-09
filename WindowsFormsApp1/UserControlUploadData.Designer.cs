@@ -39,36 +39,28 @@
             // 
             // pictureBoxSuccess
             // 
-            this.pictureBoxSuccess.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxSuccess.Image = global::WindowsFormsApp1.Properties.Resources.uploadsuccess;
             this.pictureBoxSuccess.Location = new System.Drawing.Point(29, 22);
             this.pictureBoxSuccess.Name = "pictureBoxSuccess";
-            this.pictureBoxSuccess.Size = new System.Drawing.Size(1916, 750);
+            this.pictureBoxSuccess.Size = new System.Drawing.Size(1008, 452);
             this.pictureBoxSuccess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxSuccess.TabIndex = 0;
             this.pictureBoxSuccess.TabStop = false;
             // 
             // pictureBoxDragAndDrop
             // 
-            this.pictureBoxDragAndDrop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxDragAndDrop.Image = global::WindowsFormsApp1.Properties.Resources.dragndrop;
             this.pictureBoxDragAndDrop.Location = new System.Drawing.Point(29, 22);
             this.pictureBoxDragAndDrop.Name = "pictureBoxDragAndDrop";
-            this.pictureBoxDragAndDrop.Size = new System.Drawing.Size(1916, 750);
-            this.pictureBoxDragAndDrop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxDragAndDrop.Size = new System.Drawing.Size(1008, 452);
+            this.pictureBoxDragAndDrop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDragAndDrop.TabIndex = 1;
             this.pictureBoxDragAndDrop.TabStop = false;
             // 
             // buttonEnd
             // 
-            this.buttonEnd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonEnd.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonEnd.Location = new System.Drawing.Point(904, 853);
+            this.buttonEnd.Location = new System.Drawing.Point(431, 500);
             this.buttonEnd.Name = "buttonEnd";
             this.buttonEnd.Size = new System.Drawing.Size(208, 80);
             this.buttonEnd.TabIndex = 2;
@@ -78,9 +70,7 @@
             // 
             // buttonUpload
             // 
-            this.buttonUpload.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonUpload.Location = new System.Drawing.Point(1037, 778);
+            this.buttonUpload.Location = new System.Drawing.Point(558, 450);
             this.buttonUpload.Name = "buttonUpload";
             this.buttonUpload.Size = new System.Drawing.Size(111, 32);
             this.buttonUpload.TabIndex = 3;
@@ -90,10 +80,8 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(878, 786);
+            this.label1.Location = new System.Drawing.Point(394, 458);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 16);
             this.label1.TabIndex = 4;
@@ -110,7 +98,7 @@
             this.Controls.Add(this.pictureBoxDragAndDrop);
             this.Controls.Add(this.pictureBoxSuccess);
             this.Name = "UserControlUploadData";
-            this.Size = new System.Drawing.Size(1963, 988);
+            this.Size = new System.Drawing.Size(1238, 600);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.UserControlUploadData_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.UserControlUploadData_DragEnter);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSuccess)).EndInit();

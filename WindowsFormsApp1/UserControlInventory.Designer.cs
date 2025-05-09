@@ -52,7 +52,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1119, 728);
+            this.dataGridView1.Size = new System.Drawing.Size(968, 486);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -69,7 +69,7 @@
             // 
             this.textBoxFilter.Location = new System.Drawing.Point(185, 12);
             this.textBoxFilter.Name = "textBoxFilter";
-            this.textBoxFilter.Size = new System.Drawing.Size(946, 22);
+            this.textBoxFilter.Size = new System.Drawing.Size(614, 22);
             this.textBoxFilter.TabIndex = 2;
             this.textBoxFilter.TextChanged += new System.EventHandler(this.textBoxFilter_TextChanged);
             // 
@@ -77,9 +77,9 @@
             // 
             this.buttonAddOptimal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAddOptimal.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonAddOptimal.Location = new System.Drawing.Point(1211, 421);
+            this.buttonAddOptimal.Location = new System.Drawing.Point(1001, 251);
             this.buttonAddOptimal.Name = "buttonAddOptimal";
-            this.buttonAddOptimal.Size = new System.Drawing.Size(270, 80);
+            this.buttonAddOptimal.Size = new System.Drawing.Size(204, 80);
             this.buttonAddOptimal.TabIndex = 3;
             this.buttonAddOptimal.Text = "Rendelés létrehozása";
             this.buttonAddOptimal.UseVisualStyleBackColor = true;
@@ -88,9 +88,9 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(1207, 325);
+            this.label2.Location = new System.Drawing.Point(986, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(288, 77);
+            this.label2.Size = new System.Drawing.Size(219, 77);
             this.label2.TabIndex = 4;
             this.label2.Text = "Rendelés automatikus összeállítása optimális mennyiségre";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -106,7 +106,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UserControlInventory";
-            this.Size = new System.Drawing.Size(1570, 790);
+            this.Size = new System.Drawing.Size(1238, 600);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -48,7 +48,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(238)))), ((int)(((byte)(4)))));
             this.pictureBox1.Location = new System.Drawing.Point(1, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1998, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(1263, 77);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -59,7 +59,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(1)))), ((int)(((byte)(121)))));
             this.pictureBox2.Location = new System.Drawing.Point(1, 1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1998, 67);
+            this.pictureBox2.Size = new System.Drawing.Size(1263, 67);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
@@ -83,7 +83,7 @@
             this.buttonInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonInventory.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonInventory.ForeColor = System.Drawing.Color.White;
-            this.buttonInventory.Location = new System.Drawing.Point(277, 7);
+            this.buttonInventory.Location = new System.Drawing.Point(240, 7);
             this.buttonInventory.Name = "buttonInventory";
             this.buttonInventory.Size = new System.Drawing.Size(228, 54);
             this.buttonInventory.TabIndex = 4;
@@ -99,7 +99,7 @@
             this.buttonOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOrder.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonOrder.ForeColor = System.Drawing.Color.White;
-            this.buttonOrder.Location = new System.Drawing.Point(865, 7);
+            this.buttonOrder.Location = new System.Drawing.Point(571, 7);
             this.buttonOrder.Name = "buttonOrder";
             this.buttonOrder.Size = new System.Drawing.Size(270, 54);
             this.buttonOrder.TabIndex = 5;
@@ -115,7 +115,7 @@
             this.buttonUploadPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUploadPage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonUploadPage.ForeColor = System.Drawing.Color.White;
-            this.buttonUploadPage.Location = new System.Drawing.Point(1528, 7);
+            this.buttonUploadPage.Location = new System.Drawing.Point(962, 7);
             this.buttonUploadPage.Name = "buttonUploadPage";
             this.buttonUploadPage.Size = new System.Drawing.Size(228, 54);
             this.buttonUploadPage.TabIndex = 6;
@@ -127,7 +127,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(12, 103);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1963, 988);
+            this.panel1.Size = new System.Drawing.Size(1238, 600);
             this.panel1.TabIndex = 7;
             // 
             // FormMain
@@ -135,7 +135,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1997, 1124);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonUploadPage);
             this.Controls.Add(this.buttonOrder);

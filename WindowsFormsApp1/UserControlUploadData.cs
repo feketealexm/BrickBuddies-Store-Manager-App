@@ -27,8 +27,6 @@ namespace WindowsFormsApp1
 
             this.AllowDrop = true;
             buttonEnd.Enabled = false;
-            this.DragEnter += UserControlUploadData_DragEnter;
-            this.DragDrop += UserControlUploadData_DragDrop;
             pictureBoxSuccess.Visible = false;
             pictureBoxDragAndDrop.Visible = true;
         }
@@ -77,6 +75,17 @@ namespace WindowsFormsApp1
         //Feldolgozás gomb, ez az API segítségével hozzáadja a szükséges mennyiséget a termékekhez.
         private void buttonEnd_Click(object sender, EventArgs e)
         {
+
+            DialogResult confirmationResult = MessageBox.Show(
+                "Biztosan el szeretné indítani a termékek beérkeztetését?\nEz a művelet nem visszavonható",
+                "Feldolgozás megerősítése",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+            if (confirmationResult == DialogResult.No)
+            {
+                return;
+            }
+
             buttonEnd.Enabled = false;
             pictureBoxSuccess.Visible = false;
 

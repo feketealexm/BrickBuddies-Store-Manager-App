@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp1
 {
@@ -15,9 +16,23 @@ namespace WindowsFormsApp1
         public FormMain()
         {
             InitializeComponent();
-            buttonInventory.Enabled = true;
-            buttonOrder.Enabled = false;
-            buttonUploadPage.Enabled = false;
+        }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            string filePath = "vendor_orders.csv";
+
+            // A fejléc tartalma – ezt állítsd be a tényleges oszlopneveid alapján
+            string header = "ProductBvin;VendorId;InventoryBvin;Sku;ProductName;QuantityNeeded;SiteCostTotal";
+
+            try
+            {
+                File.WriteAllText(filePath, header + Environment.NewLine);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hiba a fájl inicializálásakor: " + ex.Message);
+            }
         }
 
         private void buttonInventory_Click(object sender, EventArgs e)
@@ -26,8 +41,7 @@ namespace WindowsFormsApp1
             UserControlInventory uc = new UserControlInventory();
             panel1.Controls.Add(uc);
             uc.Dock = DockStyle.Fill;
-            buttonInventory.Enabled = false;
-            buttonOrder.Enabled = true;
+
         }
 
         private void buttonOrder_Click(object sender, EventArgs e)
@@ -36,9 +50,7 @@ namespace WindowsFormsApp1
             UserControlOrder uc = new UserControlOrder();
             panel1.Controls.Add(uc);
             uc.Dock = DockStyle.Fill;
-            buttonInventory.Enabled = false;
-            buttonOrder.Enabled = false;
-            buttonUploadPage.Enabled = true;
+
         }
 
         private void buttonUploadPage_Click(object sender, EventArgs e)
@@ -47,9 +59,8 @@ namespace WindowsFormsApp1
             UserControlUploadData uc = new UserControlUploadData();
             panel1.Controls.Add(uc);
             uc.Dock = DockStyle.Fill;
-            buttonInventory.Enabled = false;
-            buttonOrder.Enabled = false;
-            buttonUploadPage.Enabled = false;
         }
+
+        
     }
 }
